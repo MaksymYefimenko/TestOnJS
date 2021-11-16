@@ -1,0 +1,8 @@
+services:
+  # Cypress container
+  cypress:
+    # the Docker image to use from https://github.com/cypress-io/cypress-docker-images
+    image: "cypress/included:3.2.0"
+    working_dir: /e2e
+    volumes:
+      - ./:/e2e
